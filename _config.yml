@@ -1,5 +1,16 @@
+# management-aptitude.github.io
+
+name: "management-aptitude.github.io"
+
+title: "Welcome to management-aptitude.github.io!"
+
+description: "Management Aptitude"
+
+keywords: "management,aptitude,trainee,reasoning,arithmetic,mathematics"
+
 url: "http://management-aptitude.github.io"
 #url: "http://0.0.0.0:4000"
+
 baseurl: ""
 
 gems:
