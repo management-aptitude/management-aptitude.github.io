@@ -1,0 +1,6 @@
+url: "http://management-aptitude.github.io"
+#url: "http://0.0.0.0:4000"
+baseurl: ""
+
+gems:
+  - jekyll-sitemap
