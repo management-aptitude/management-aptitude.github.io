@@ -3,103 +3,151 @@ layout: default
 ---
 
 <script type="text/javascript">
-      function validateRadio( obj,correct ) {
-        var result = 0;
+function validateRadio( obj,correct ) {
+  var result = 0;
 
-				<!--  obj.length is number of radio btns in a group ie 4 -->
-        for(var i=0; i<obj.length; i++){
-            if(obj[i].checked==true && obj[i].value==correct){
-                result = 1;
-            }
-        }
-        if(!result && obj.value == correct){
-            result = 1;
-        }
-        return result
+  <!--  obj.length is number of radio btns in a group ie 4 -->
+  for(var i=0; i<obj.length; i++){
+      if(obj[i].checked==true && obj[i].value==correct){
+          result = 1;
       }
-      function validateSubmit( obj ) {
-        var err = '';
+  }
+  if(!result && obj.value == correct){
+      result = 1;
+  }
+  return result
+}
 
-				// if validateRadio() returns 1, then answer is correct
-				// if 0, answer is wrong
-				if( !validateRadio( obj.capital,2 ) ) {
-					err+='\nQ1 Capital of Arunachal Pradesh is Itanagar';
-				}
-        if( !validateRadio( obj.dam,1 ) ) {
-					err+='\nQ2 Longest man-made dam is Hirakud Dam';
-				}
-				if( !validateRadio( obj.socio,4 ) ){
-					err+='\nQ3 The social science that describes the factors which determine the production, distribution and consumption of goods and services is Economics';
-				}
-				if( !validateRadio( obj.circum,2 ) ){
-					err+='\nQ4 Circumference of circle = 2*pi*r';
-				}
-				if( !validateRadio( obj.fibinoci,3 ) ){
-					err+='\nQ5 Fibinocci series 0, 1, 1, 2, 3, 5, 8, 13, 21,34';
-				}
+function validateSubmit( obj ) {
+  var err = '';
 
-				// if error, err = '\nWrong !!!'
-				// ie err.length = 10.
-        if( err.length ){
-            alert('Some answers given where wrong \nCorrect answer:'+err);
-            return false;
-        }
-        else{
-            alert('All Correct !');
-            return true;
-        }
-      }
+  // if validateRadio() returns 1, then answer is correct
+  // if 0, answer is wrong
+  if( !validateRadio( obj.capital,2 ) ) {
+    err+='\nQ1 Capital of Arunachal Pradesh is Itanagar';
+  }
+  if( !validateRadio( obj.dam,1 ) ) {
+    err+='\nQ2 Longest man-made dam is Hirakud Dam';
+  }
+  if( !validateRadio( obj.socio,4 ) ){
+    err+='\nQ3 The social science that describes the factors which determine the production, distribution and consumption of goods and services is Economics';
+  }
+  if( !validateRadio( obj.circum,2 ) ){
+    err+='\nQ4 Circumference of circle = 2*pi*r';
+  }
+  if( !validateRadio( obj.fibinoci,3 ) ){
+    err+='\nQ5 Fibinocci series 0, 1, 1, 2, 3, 5, 8, 13, 21,34';
+  }
 
-			// Reset button to clear form 'radioBtnForm'
-			function uncheck() {
-				document.getElementById("radioBtnForm").reset();
-			}
+  // if error, err = '\nWrong !!!'
+  // ie err.length = 10.
+  if( err.length ){
+    //  alert('Some answers given where wrong \nCorrect answer:'+err);
+    //	$("#submitBtn").click(function(){
+        $("#scoreDiv, #showHintBtn").show(1000);
+        $('#comment').val(err);
+    //	});
+      return false;
+  }
+  else{
+      alert('Congrats !!! \nAll correct answers');
+      return true;
+  }
+}
 
-    </script>
+// Reset button to clear form 'radioBtnForm'
+function uncheck() {
+  document.getElementById("radioBtnForm").reset();
+}
+
+// show hint in the text area
+function showHint(div_id) {
+  $(document).ready(function(){
+  //$("#showHintBtn").click(function(){
+    //$(div_id).show(1000);
+  //});
+  if (false == $(div_id).is(':visible')) {
+      $(div_id).show(1000);
+  }
+  else {
+      $(div_id).hide(1000);
+  }
+});
+}
+</script>
+
 <div class="container">
-    <form role="form" id="radioBtnForm" onsubmit="return validateSubmit(this);" action="#">
-<div class="radio">
-      <p><b>Q1</b> What is the capital of Arunachal Pradesh ?</p>
-	
-      <label><input name="capital" value="1" type="radio" >Gangtok</label>
-      <label><input name="capital" value="2" type="radio" >Itanagar</label>
-      <label><input name="capital" value="3" type="radio" >Agartala</label>
-      <label><input name="capital" value="4" type="radio" >Imphal</label>
+<form role="form" id="radioBtnForm" onsubmit="return validateSubmit(this);" action="#">
+  <div class="radio">
+    <p><b>Q1</b> What is the capital of Arunachal Pradesh ?</p>
+    <label><input name="capital" value="1" type="radio" >Gangtok</label>
+    <label><input name="capital" value="2" type="radio" >Itanagar</label>
+    <label><input name="capital" value="3" type="radio" >Agartala</label>
+    <label><input name="capital" value="4" type="radio" >Imphal</label>
+  </div>
 
-</div>
-<div class="radio">
-      <p><b>Q2</b> Longest man-made dam</p>
-      <label><input name="dam" value="1" type="radio" >Hirakud Dam</label>
-      <label><input name="dam" value="2" type="radio" >Bhakra Nangal Dam</label>
-      <label><input name="dam" value="3" type="radio" >Tehri Dam</label>
-      <label><input name="dam" value="4" type="radio" >Nagarjuna Sagar Dam</label>
-</div>
-<div class="radio">
-			<p><b>Q3</b> The social science that seeks to describe the factors
-			  which determine the production, distribution and consumption of goods and services.</p>
-		  <label><input name="socio" value="1" type="radio" >Humanities</label>
-		  <label><input name="socio" value="2" type="radio" >Management</label>
-		  <label><input name="socio" value="3" type="radio" >Statistics</label>
-		  <label><input name="socio" value="4" type="radio" >Economics</label>
+  <div class="radio">
+    <p><b>Q2</b> Longest man-made dam</p>
+    <label><input name="dam" value="1" type="radio" >Hirakud Dam</label>
+    <label><input name="dam" value="2" type="radio" >Bhakra Nangal Dam</label>
+    <label><input name="dam" value="3" type="radio" >Tehri Dam</label>
+    <label><input name="dam" value="4" type="radio" >Nagarjuna Sagar Dam</label>
+  </div>
 
-</div>
-<div class="radio">
-			<p><b>Q4</b> Cirumference of circle is given by </p>
-		 <label><input name="circum" value="1" type="radio" >pi*r*r</label>
-		  <label><input name="circum" value="2" type="radio" >2*pi*r</label>
-		  <label><input name="circum" value="3" type="radio" >2*pi</label>
-		  <label><input name="circum" value="4" type="radio" >pi*r</label>
+  <div class="radio">
+    <p><b>Q3</b> The social science that seeks to describe the factors
+      which determine the production, distribution and consumption of goods and services.</p>
+    <label><input name="socio" value="1" type="radio" >Humanities</label>
+    <label><input name="socio" value="2" type="radio" >Management</label>
+    <label><input name="socio" value="3" type="radio" >Statistics</label>
+    <label><input name="socio" value="4" type="radio" >Economics</label>
+  </div>
 
+  <div class="radio">
+    <p><b>Q4</b> Cirumference of circle is given by </p>
+    <label><input name="circum" value="1" type="radio" >pi*r*r</label>
+    <label><input name="circum" value="2" type="radio" >2*pi*r</label>
+    <label><input name="circum" value="3" type="radio" >2*pi</label>
+    <label><input name="circum" value="4" type="radio" >pi*r</label>
+  </div>
+
+  <div class="radio">
+    <p><b>Q5</b> The next number in the series 0, 1, 1, 2, 3, 5, 8, 13, 21, __ ?</p>
+    <label><input name="fibinoci" value="1" type="radio" >30</label>
+    <label><input name="fibinoci" value="2" type="radio" >29</label>
+    <label><input name="fibinoci" value="3" type="radio" >34</label>
+    <label><input name="fibinoci" value="4" type="radio" >42</label>
+  </div>
+
+  <!-- submit button -->
+  <p><input value="Submit" type="submit" class="btn btn-success" id="submitBtn"></p>
+</form>
+
+
+<!-- score area - initially hidden -->
+<!-- <div class="form-group" id="scoreDiv" style="display: none">
+  <label for="inputsm">Score</label>
+  <input class="form-control input-sm" id="inputsm" type="text" >
+</div> -->
+
+<!-- hide/show -->
+<!-- <div id="first">
+  <span class="test"></span>
+</div> -->
+
+<!-- when clicked, shows hint - initially hidden -->
+<button onclick="showHint(hintTxtDisplay)" id="showHintBtn" class="btn btn-warning" style="display: none">Show Hint</button>
+
+<!--  This can be used to display HINT-->
+<div id="hintTxtDisplay" style="display: none">
+<form role="form">
+  <div class="form-group">
+    <label for="comment">Click the button for hide/show</label>
+    <textarea class="form-control" rows="5" id="comment"></textarea>
+  </div>
+</form>
 </div>
-<div class="radio">
-			<p><b>Q5</b> The next number in the series 0, 1, 1, 2, 3, 5, 8, 13, 21, __ ?</p>
-		  <label><input name="fibinoci" value="1" type="radio" >30</label>
-		  <label><input name="fibinoci" value="2" type="radio" >29</label>
-		  <label><input name="fibinoci" value="3" type="radio" >34</label>
-		  <label><input name="fibinoci" value="4" type="radio" >42</label>
-</div>
-		  <!-- submit button -->
-      <p><input value="Submit" type="submit" class="btn btn-success"></p>
-    </form>
-		<button onclick="uncheck()"class="btn btn-danger">Reset</button>
-</div>
+
+<!-- reset/uncheck -->
+<hr>
+<div><button onclick="uncheck()" class="btn btn-danger">Reset</button></div>
