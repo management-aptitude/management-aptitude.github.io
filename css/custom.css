@@ -135,3 +135,12 @@ h1.brand-heading{
   display: inline-block;
   border-radius: 10%;
 }
+
+/* Carousel left right backgrnd image*/
+.carousel-control.left {
+  background-image: none;
+}
+
+.carousel-control.right{
+  background-image: none;
+}

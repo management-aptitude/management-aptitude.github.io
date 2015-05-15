@@ -58,6 +58,7 @@ function validateSubmit( obj ) {
 // Reset button to clear form 'radioBtnForm'
 function uncheck() {
   document.getElementById("radioBtnForm").reset();
+  $("#hintTxtDisplay,#showHintBtn").hide(1000);
 }
 
 // show hint in the text area
@@ -136,7 +137,7 @@ function showHint(div_id) {
 </div> -->
 
 <!-- when clicked, shows hint - initially hidden -->
-<button onclick="showHint(hintTxtDisplay)" id="showHintBtn" class="btn btn-warning" style="display: none">Show Hint</button>
+<button onclick="showHint(hintTxtDisplay)" id="showHintBtn" class="btn btn-lg btn-warning" style="display: none">Hint</button>
 
 <!--  This can be used to display HINT-->
 <div id="hintTxtDisplay" style="display: none">
