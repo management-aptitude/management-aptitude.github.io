@@ -61,20 +61,7 @@ function uncheck() {
   $("#hintTxtDisplay,#showHintBtn").hide(1000);
 }
 
-// show hint in the text area
-function showHint(div_id) {
-  $(document).ready(function(){
-  //$("#showHintBtn").click(function(){
-    //$(div_id).show(1000);
-  //});
-  if (false == $(div_id).is(':visible')) {
-      $(div_id).show(1000);
-  }
-  else {
-      $(div_id).hide(1000);
-  }
-});
-}
+
 </script>
 
 <div class="container">
@@ -137,7 +124,7 @@ function showHint(div_id) {
 </div> -->
 
 <!-- when clicked, shows hint - initially hidden -->
-<button onclick="showHint(hintTxtDisplay)" id="showHintBtn" class="btn btn-lg btn-warning" style="display: none">Hint</button>
+<button onclick="showSection(hintTxtDisplay)" id="showHintBtn" class="btn btn-lg btn-warning" style="display: none">Hint</button>
 
 <!--  This can be used to display HINT-->
 <div id="hintTxtDisplay" style="display: none">

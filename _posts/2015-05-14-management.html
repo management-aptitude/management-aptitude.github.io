@@ -8,9 +8,10 @@ layout: default
   <h3>Management</h3>
   <div class="tree well">
       <ul>
-          <li>
-              <span><i class="icon-folder-open"></i> Economics</span>
-              <ul>
+          <li style="list-style:none">
+
+              <span><i class="icon-folder-open"></i><a onclick="showSection(economics_list)">Economics</a></span>
+              <ul id="economics_list" style="display: none">
                   <li>
                   	<span><i class="icon-minus-sign"></i></span> <a href="#economics_management_slides">Slides</a>
                   </li>
@@ -23,9 +24,9 @@ layout: default
 
               </ul>
           </li>
-          <li>
-              <span><i class="icon-folder-open"></i> Accounting</span>
-              <ul>
+          <li style="list-style:none">
+              <span><i class="icon-folder-open"></i><a onclick="showSection(accounting_list)">Accounting</a></span>
+              <ul id="accounting_list" style="display: none">
                   <li>
                   	<span><i class="icon-minus-sign"></i></span> <a href="#accounting_management_slides">Slides</a>
                   </li>
