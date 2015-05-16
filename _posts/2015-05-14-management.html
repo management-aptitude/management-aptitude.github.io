@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 <div class="container">
 
   <h3>Management</h3>
@@ -10,7 +9,7 @@ layout: default
       <ul>
           <li style="list-style:none">
 
-              <span><i class="icon-folder-open"></i><a onclick="showSection(economics_list)">Economics</a></span>
+              <span><a role="button" onclick="showSection(economics_list)">Economics <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></a></span>
               <ul id="economics_list" style="display: none">
                   <li>
                   	<span><i class="icon-minus-sign"></i></span> <a href="#economics_management_slides">Slides</a>
@@ -25,7 +24,8 @@ layout: default
               </ul>
           </li>
           <li style="list-style:none">
-              <span><i class="icon-folder-open"></i><a onclick="showSection(accounting_list)">Accounting</a></span>
+              <span><a role="button" onclick="showSection(accounting_list)">Accounting <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+</a></span>
               <ul id="accounting_list" style="display: none">
                   <li>
                   	<span><i class="icon-minus-sign"></i></span> <a href="#accounting_management_slides">Slides</a>

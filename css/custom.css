@@ -1,6 +1,21 @@
 body {
 
 }
+p {
+font-family: 'Droid Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 35px 0 10px;
+    /*text-transform: uppercase;*/
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
 
 h1.brand-heading{
   font-weight: 3000;
@@ -143,4 +158,15 @@ h1.brand-heading{
 
 .carousel-control.right{
   background-image: none;
+}
+
+/* bootstrap Buttons */
+.btn-success {
+	width: 130px;
+}
+.btn-danger {
+	width: 130px;
+}
+.btn-warning {
+	width: 130px;
 }
