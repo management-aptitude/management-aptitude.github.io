@@ -1,1 +1,12 @@
+# http://qualitative.in
+
+#
+site_brand_name: Qualitative.In
+
+#
 email: qualitative.in@gmail.com
+
+#
+social:
+  - title: google-plus
+    url: https://plus.google.com/

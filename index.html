@@ -4,7 +4,8 @@ layout: default
 
 <!-- Carousel
 ================================================== -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover" data-wrap="true">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000"  data-wrap="true">
+<!-- data-pause="hover" -->
   <!-- Commenting Indicators -->
   <!-- <ol class="carousel-indicators">
   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -45,6 +46,16 @@ layout: default
         </div>
       </div>
     </div>
+    <div class="item">
+      <img class="third-slide" src="images/currentaffairs_carousel.png" alt="Third slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Current Affairs</h1>
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a class="btn btn-lg btn-primary" href="{{ "/2015/05/17/currentaffairs.html" | prepend:site.url }}" role="button">Read More</a></p>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- Commenting left and right glypicon-chevron -->
   <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -58,45 +69,79 @@ layout: default
 </div><!-- /.carousel -->
 
 <div class="container">
-  <h1 >Dashboard</h1>
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="text-justify">Etiam vulputate fringilla varius.
+    Fusce vehicula in erat sed vestibulum. Donec venenatis, orci vitae suscipit molestie,
+    ipsum libero aliquet elit, sed elementum dolor tellus quis risus. Suspendisse convallis
+    ullamcorper efficitur.</p>
+  </section>
+
+  <h2>Dashboard</h2>
   <div class="row placeholders">
     <div class="col-xs-6 col-sm-3 placeholder">
       <a href="{{ "/2015/05/14/reasoning.html" | prepend:site.url }}">
-        <img src="images/image46133.png" class="img-responsive" alt="Generic placeholder thumbnail">
+        <img src="images/reasoning_200x200.png" class="img-responsive" alt="Generic placeholder thumbnail">
       </a>
       <h4>Reasoning</h4>
       <span class="text-muted"><a href="{{ "/2015/05/14/reasoning.html" | prepend:site.url }}">
-        Read More</a> - <a href="{{ "/2015/05/14/arithmetic.html#disqus_thread" | prepend:site.url }}">
-          Comments</a></span>
+        Read More</a><!-- - <a href="{{ "/2015/05/14/arithmetic.html#disqus_thread" | prepend:site.url }}">
+          Comments</a>--></span>
     </div>
     <div class="col-xs-6 col-sm-3 placeholder">
       <a href="{{ "/2015/05/14/arithmetic.html" | prepend:site.url }}">
-        <img src="images/image472395.png" class="img-responsive" alt="Generic placeholder thumbnail">
+        <img src="images/arithmetic_200x200.png" class="img-responsive" alt="Generic placeholder thumbnail">
       </a>
       <h4>Arithmetic</h4>
       <span class="text-muted"><a href="{{ "/2015/05/14/arithmetic.html" | prepend:site.url }}">
-        Read More</a> - <a href="{{ "/2015/05/14/arithmetic.html#disqus_thread" | prepend:site.url }}">
-          Comments</a></span>
+        Read More</a><!-- - <a href="{{ "/2015/05/14/arithmetic.html#disqus_thread" | prepend:site.url }}">
+          Comments</a></span>-->
     </div>
     <div class="col-xs-6 col-sm-3 placeholder">
       <a href="{{ "/2015/05/14/management.html" | prepend:site.url }}">
-        <img src="images/image4sd909.png" class="img-responsive" alt="Generic placeholder thumbnail">
+        <img src="images/management_200x200.png" class="img-responsive" alt="Generic placeholder thumbnail">
       </a>
       <h4>Management</h4>
       <span class="text-muted"><a href="{{ "/2015/05/14/management.html" | prepend:site.url }}">
-        Read More</a> - <a href="{{ "/2015/05/14/arithmetic.html#disqus_thread" | prepend:site.url }}">
-          Comments</a></span>
+        Read More</a><!-- - <a href="{{ "/2015/05/14/arithmetic.html#disqus_thread" | prepend:site.url }}">
+          Comments</a>--></span>
+    </div>
+    <div class="col-xs-6 col-sm-3 placeholder">
+      <a href="{{ "/2015/05/17/currentaffairs.html" | prepend:site.url }}">
+        <img src="images/currentaffairs_200x200.png" class="img-responsive" alt="Generic placeholder thumbnail">
+      </a>
+      <h4>Current Affairs</h4>
+      <span class="text-muted"><a href="{{ "/2015/05/17/currentaffairs.html" | prepend:site.url }}">
+        Read More</a><!-- - <a href="{{ "/2015/05/17/currentaffairs.html#disqus_thread" | prepend:site.url }}">
+          Comments</a>--></span>
     </div>
     <div class="col-xs-6 col-sm-3 placeholder">
       <a href="{{ "/2015/05/11/moke.html" | prepend:site.url }}">
-        <img src="images/image486xc3.png" class="img-responsive" alt="Generic placeholder thumbnail">
+        <img src="images/mock_200x200.png" class="img-responsive" alt="Generic placeholder thumbnail">
       </a>
       <h4>Moke Test</h4>
       <span class="text-muted"><a href="{{ "/2015/05/11/moke.html" | prepend:site.url }}">Try</a></span>
     </div>
   </div>
+
+    <!-- notification section -->
+    <section id="notifications">
+    <h2>Notifications</h2>
+    <div class="well">
+      {% for post in site.posts %}
+        {% if post.title == 'Notifications' %}
+          {{ post.excerpt }}
+            <p><a href="{{ "/2015/05/17/notifications.html" | prepend:site.url }}">Read more...</a></p>
+        {% endif %}
+      {% endfor %}
+    </div>
+    </section>
+
+
 </div>
-<script type="text/javascript">
+<!-- commenting disqus -->
+<!-- <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'qualitativein';
 
@@ -107,4 +152,4 @@ layout: default
         s.src = '//' + disqus_shortname + '.disqus.com/count.js';
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
-</script>
+</script> -->

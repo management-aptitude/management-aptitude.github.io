@@ -5,7 +5,7 @@
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
       </button>
-      <a class="navbar-brand" href="#">Management Trainee</a>
+      <a class="navbar-brand" href="{{ site.url }}">{{ site.data.custom.site_brand_name }}</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
@@ -15,11 +15,9 @@
         </li>
         <li><a href="{{ site.url }}">Home</a></li>
         <li class="active">
-          <a href="#">About</a>
+          <a class="page-scroll" href="#about">About</a>
           </li>
-        <li>
-          <a href="#">Blog</a>
-          </li>
+          <li><a class="page-scroll" href="#notifications">Notifications</a></li>
         <li>
           <a href="mailto:{{ site.data.custom.email }}">Contact</a>
           </li>
