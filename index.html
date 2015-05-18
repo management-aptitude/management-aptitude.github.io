@@ -128,14 +128,15 @@ layout: default
     <!-- notification section -->
     <section id="notifications">
     <h2>Notifications</h2>
-    <div class="well">
+    <!-- <div class="well"> -->
       {% for post in site.posts %}
         {% if post.title == 'Notifications' %}
           {{ post.excerpt }}
-            <p><a href="{{ "/2015/05/17/notifications.html" | prepend:site.url }}">Read more...</a></p>
+            <p><a href="{{ "/2015/05/17/notifications.html" | prepend:site.url }}">view all...</a></p>
+            <button type="button" class="btn btn-primary btn-block">Button 1</button>
         {% endif %}
       {% endfor %}
-    </div>
+    <!-- </div> -->
     </section>
 
 
