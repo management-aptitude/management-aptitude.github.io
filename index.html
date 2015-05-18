@@ -4,7 +4,7 @@ layout: default
 
 <!-- Carousel
 ================================================== -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000"  data-wrap="true">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000"  data-pause="hover" data-wrap="true">
 <!-- data-pause="hover" -->
   <!-- Commenting Indicators -->
   <!-- <ol class="carousel-indicators">
@@ -19,6 +19,7 @@ layout: default
         <div class="carousel-caption">
           <h1>Management</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae magna. Fusce ut est gravida augue malesuada vestibulum in in eros.</p>
+          <p><a class="btn btn-info btn-sm" href="{{ "/2015/05/14/management.html" | prepend:site.url }}" role="button">Read More</a></p>
           <form class="navbar-form">
           <input type="text" class="form-control" placeholder="Search...">
           </form>
@@ -32,7 +33,7 @@ layout: default
         <div class="carousel-caption">
           <h1>Reasoning</h1>
           <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-lg btn-primary" href="{{ "/2015/05/14/reasoning.html" | prepend:site.url }}" role="button">Read More</a></p>
+          <p><a class="btn btn-info btn-sm" href="{{ "/2015/05/14/reasoning.html" | prepend:site.url }}" role="button">Read More</a></p>
         </div>
       </div>
     </div>
@@ -42,7 +43,7 @@ layout: default
         <div class="carousel-caption">
           <h1>Arithmetic</h1>
           <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-lg btn-primary" href="{{ "/2015/05/14/arithmetic.html" | prepend:site.url }}" role="button">Read More</a></p>
+          <p><a class="btn btn-info btn-sm" href="{{ "/2015/05/14/arithmetic.html" | prepend:site.url }}" role="button">Read More</a></p>
         </div>
       </div>
     </div>
@@ -52,7 +53,7 @@ layout: default
         <div class="carousel-caption">
           <h1>Current Affairs</h1>
           <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-lg btn-primary" href="{{ "/2015/05/17/currentaffairs.html" | prepend:site.url }}" role="button">Read More</a></p>
+          <p><a class="btn btn-info btn-sm" href="{{ "/2015/05/17/currentaffairs.html" | prepend:site.url }}" role="button">Read More</a></p>
         </div>
       </div>
     </div>
@@ -85,7 +86,7 @@ layout: default
         <img src="images/reasoning_200x200.png" class="img-responsive" alt="Generic placeholder thumbnail">
       </a>
       <h4>Reasoning</h4>
-      <span class="text-muted"><a href="{{ "/2015/05/14/reasoning.html" | prepend:site.url }}">
+      <span class="text-muted"><a class="btn btn-info btn-sm" href="{{ "/2015/05/14/reasoning.html" | prepend:site.url }}">
         Read More</a><!-- - <a href="{{ "/2015/05/14/arithmetic.html#disqus_thread" | prepend:site.url }}">
           Comments</a>--></span>
     </div>
@@ -94,7 +95,7 @@ layout: default
         <img src="images/arithmetic_200x200.png" class="img-responsive" alt="Generic placeholder thumbnail">
       </a>
       <h4>Arithmetic</h4>
-      <span class="text-muted"><a href="{{ "/2015/05/14/arithmetic.html" | prepend:site.url }}">
+      <span class="text-muted"><a class="btn btn-info btn-sm" href="{{ "/2015/05/14/arithmetic.html" | prepend:site.url }}">
         Read More</a><!-- - <a href="{{ "/2015/05/14/arithmetic.html#disqus_thread" | prepend:site.url }}">
           Comments</a></span>-->
     </div>
@@ -103,7 +104,7 @@ layout: default
         <img src="images/management_200x200.png" class="img-responsive" alt="Generic placeholder thumbnail">
       </a>
       <h4>Management</h4>
-      <span class="text-muted"><a href="{{ "/2015/05/14/management.html" | prepend:site.url }}">
+      <span class="text-muted"><a class="btn btn-info btn-sm" href="{{ "/2015/05/14/management.html" | prepend:site.url }}">
         Read More</a><!-- - <a href="{{ "/2015/05/14/arithmetic.html#disqus_thread" | prepend:site.url }}">
           Comments</a>--></span>
     </div>
@@ -112,7 +113,7 @@ layout: default
         <img src="images/currentaffairs_200x200.png" class="img-responsive" alt="Generic placeholder thumbnail">
       </a>
       <h4>Current Affairs</h4>
-      <span class="text-muted"><a href="{{ "/2015/05/17/currentaffairs.html" | prepend:site.url }}">
+      <span class="text-muted"><a class="btn btn-info btn-sm" href="{{ "/2015/05/17/currentaffairs.html" | prepend:site.url }}">
         Read More</a><!-- - <a href="{{ "/2015/05/17/currentaffairs.html#disqus_thread" | prepend:site.url }}">
           Comments</a>--></span>
     </div>
@@ -121,7 +122,7 @@ layout: default
         <img src="images/mock_200x200.png" class="img-responsive" alt="Generic placeholder thumbnail">
       </a>
       <h4>Moke Test</h4>
-      <span class="text-muted"><a href="{{ "/2015/05/11/moke.html" | prepend:site.url }}">Try</a></span>
+      <span class="text-muted"><a class="btn btn-info btn-sm" href="{{ "/2015/05/11/moke.html" | prepend:site.url }}">Try</a></span>
     </div>
   </div>
 
@@ -132,8 +133,8 @@ layout: default
       {% for post in site.posts %}
         {% if post.title == 'Notifications' %}
           {{ post.excerpt }}
-            <p><a href="{{ "/2015/05/17/notifications.html" | prepend:site.url }}">view all...</a></p>
-            <button type="button" class="btn btn-primary btn-block">Button 1</button>
+            <p><a class="btn btn-info"
+              href="{{ "/2015/05/17/notifications.html" | prepend:site.url }}">view all...</a></p>
         {% endif %}
       {% endfor %}
     <!-- </div> -->

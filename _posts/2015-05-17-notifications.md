@@ -7,7 +7,6 @@ layout: tabs
   <a>Notification</a><br>
   <a>Notification</a><br>
 
-  <hr>
   <h3>Older Notifications</h3>
   <a>Notification</a><br>
   <a>Notification</a><br>
