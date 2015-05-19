@@ -2,16 +2,19 @@
 layout: tabs
 ---
 
-<div class="container well">
-  <a>Notification1</a><br>
-  <a>Notification</a><br>
-  <a>Notification</a><br>
+<div class="container">
+  <div class="well">
+    {% for i in site.data.notifications.notify limit:3 %}
+      <ul class="customUl">
+        <li>{{ i.date }} - {{ i.description }} <a class="label label-warning" href="{{ i.url }}">Link</a></li>
+      </ul>
+    {% endfor %}
 
-  <h3>Older Notifications</h3>
-  <a>Notification</a><br>
-  <a>Notification</a><br>
-  <a>Notification</a><br>
-  <a>Notification</a><br>
-  <a>Notification</a><br>
-  <a>Notification</a><br>
+
+    {% for i in site.data.notifications.notify offset:3 %}
+      <ul class="customUl">
+        <li>{{ i.date }} - {{ i.description }} <a class="label label-info" href="{{ i.url }}">Link</a></li>
+      </ul>
+    {% endfor %}
+  </div>
 </div>

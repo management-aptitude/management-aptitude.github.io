@@ -13,7 +13,7 @@ data-pause="hover" data-wrap="true">
           <div class="carousel-caption">
           <h1>{{ i.heading }}</h1>
           <p>{{ i.cmnt }}</p>
-          <p><a class="btn btn-info btn-sm" href="{{ i.post_url | prepend:site.url }}" role="button">Read More</a></p>
+          <p><a class="btn btn-primary btn-sm" href="{{ i.post_url | prepend:site.url }}" role="button">Read More</a></p>
           <form class="navbar-form">
             <input type="text" class="form-control" placeholder="Search...">
           </form>
@@ -37,7 +37,7 @@ data-pause="hover" data-wrap="true">
   <h2>Dashboard</h2>
   <div class="row placeholders">
     <!-- Assigning the dashboard image links to an array -->
-    {% assign words = "images/currentaffairs_200x200.png images/reasoning_200x200.png images/management_200x200.png images/arithmetic_200x200.png images/mock_200x200.png" | split: ' ' %}
+    {% assign words = "media/images/currentaffairs_200x200.png media/images/reasoning_200x200.png media/images/management_200x200.png media/images/arithmetic_200x200.png media/images/mock_200x200.png" | split: ' ' %}
 
     {% assign count = 0 %}
     {% for post in site.posts offset:1  %}
@@ -48,7 +48,7 @@ data-pause="hover" data-wrap="true">
       </a>
       <h4>{{ post.title }}</h4>
       <span class="text-muted">
-        <a class="btn btn-info btn-sm" href="{{ post.url | prepend:site.url }}">
+        <a class="btn btn-primary btn-sm" href="{{ post.url | prepend:site.url }}">
         Read More</a><!-- - <a href="{{ "/2015/05/14/arithmetic.html#disqus_thread" | prepend:site.url }}">
         Comments</a>-->
       </span>
@@ -63,9 +63,10 @@ data-pause="hover" data-wrap="true">
     {% for post in site.posts %}
       {% if post.title == 'Notifications' %}
         {{ post.excerpt }}
-        <p><a class="btn btn-info"
-        href="{{ "/2015/05/17/notifications.html" | prepend:site.url }}">
-        view all...</a></p>
+        <p>
+          <a class="btn btn-primary"
+          href="{{ post.url  | prepend:site.url }}">view all ...</a>
+        </p>
         {% endif %}
     {% endfor %}
   </section>

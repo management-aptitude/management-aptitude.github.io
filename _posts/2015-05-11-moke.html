@@ -124,10 +124,10 @@ function uncheck() {
 </div> -->
 
 <!-- when clicked, shows hint - initially hidden -->
-<button onclick="showSection(hintTxtDisplay)" id="showHintBtn" class="btn btn-warning" style="display: none">Hint</button>
+<button onclick="showSection(hintTxtDisplay)" id="showHintBtn" class="btn btn-warning" >Hint</button>
 
 <!--  This can be used to display HINT-->
-<div id="hintTxtDisplay" style="display: none">
+<div id="hintTxtDisplay">
 <form role="form">
   <div class="form-group">
     <label for="comment">Click the button for hide/show</label>
@@ -138,4 +138,4 @@ function uncheck() {
 
 <!-- reset/uncheck -->
 <hr>
-<div><button onclick="uncheck()" class="btn btn-danger">Reset</button></div>
+<div><button onclick="uncheck()" class="btn btn-danger" id="resetBtn">Reset</button></div>

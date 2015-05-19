@@ -26,26 +26,26 @@ elementum dolor tellus quis risus. Suspendisse convallis ullamcorper efficitur."
 # carousel
 carousel:
   - heading: Management
-    img_url: images/mangmnt_carousel.png
+    img_url: media/images/mangmnt_carousel.png
     cmnt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae magna. Fusce ut est gravida augue malesuada vestibulum in in eros.
     post_url: /2015/05/14/management.html
     slide_num: first-slide
-    active: active
+    active:
   - heading: Reasoning
-    img_url: images/reasng_carousel.png
+    img_url: media/images/reasng_carousel.png
     cmnt: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
     post_url: /2015/05/14/reasoning.html
     slide_num: second-slide
-    active:
+    active: active
   - heading: Arithmetic
-    img_url: images/arthmtc_carousel.png
+    img_url: media/images/arthmtc_carousel.png
     cmnt: Justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
     post_url: /2015/05/14/arithmetic.html
     slide_num: third-slide
     active:
   - heading: Current Affairs
-    img_url: images/currentaffairs_carousel.png
+    img_url: media/images/currentaffairs_carousel.png
     cmnt: Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
     post_url: /2015/05/17/currentaffairs.html
     slide_num: forth-slide
-    active:
+    active: 

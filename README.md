@@ -1,5 +1,7 @@
-# management-aptitude.github.io
+# qualitative.in
 WebPage
 
 ### Images
 http://pixabay.com/
+
+

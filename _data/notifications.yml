@@ -1,0 +1,19 @@
+# http://qualitative.in
+
+# notifications
+notify:
+  - date: 19/05/2015
+    description: A small description here
+    url: http://qualitative.in
+  - date: 18/05/2015
+    description: Another small description here
+    url: http://qualitative.in
+  - date: 17/05/2015
+    description: Yet another another small description here
+    url: http://qualitative.in
+  - date: 16/05/2015
+    description: Reapting small description here
+    url: http://qualitative.in
+  - date: 15/05/2015
+    description: Same description here
+    url: http://qualitative.in
