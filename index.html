@@ -63,6 +63,7 @@ data-pause="hover" data-wrap="true">
     {% for post in site.posts %}
       {% if post.title == 'Notifications' %}
         {{ post.excerpt }}
+        <br>
         <p>
           <a class="btn btn-primary"
           href="{{ post.url  | prepend:site.url }}">view all ...</a>
