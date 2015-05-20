@@ -20,22 +20,27 @@ function validateRadio( obj,correct ) {
 
 function validateSubmit( obj ) {
   var err = '';
-
+  var count = 0;
   // if validateRadio() returns 1, then answer is correct
   // if 0, answer is wrong
   if( !validateRadio( obj.capital,2 ) ) {
-    err+='\nQ1 Capital of Arunachal Pradesh is Itanagar';
+    count ++;
+    err+='\nQ1 Capital of Arunachal Pradesh is Itanagar' ;
   }
   if( !validateRadio( obj.dam,1 ) ) {
+    count ++;
     err+='\nQ2 Longest man-made dam is Hirakud Dam';
   }
   if( !validateRadio( obj.socio,4 ) ){
+    count ++;
     err+='\nQ3 The social science that describes the factors which determine the production, distribution and consumption of goods and services is Economics';
   }
   if( !validateRadio( obj.circum,2 ) ){
+    count ++;
     err+='\nQ4 Circumference of circle = 2*pi*r';
   }
   if( !validateRadio( obj.fibinoci,3 ) ){
+    count ++;
     err+='\nQ5 Fibinocci series 0, 1, 1, 2, 3, 5, 8, 13, 21,34';
   }
 
@@ -44,20 +49,25 @@ function validateSubmit( obj ) {
   if( err.length ){
     //  alert('Some answers given where wrong \nCorrect answer:'+err);
     //	$("#submitBtn").click(function(){
+    $('#score').val( 5 - count +' out of 5');
         $("#scoreDiv, #showHintBtn").show(1000);
         $('#comment').val(err);
     //	});
       return false;
   }
   else{
-      alert('Congrats !!! \nAll correct answers');
-      return true;
+      $('#score').val('Congrats !!! All correct answers');
+
+
+      //alert('Congrats !!! \nAll correct answers');
+      return false;
   }
 }
 
 // Reset button to clear form 'radioBtnForm'
 function uncheck() {
   document.getElementById("radioBtnForm").reset();
+  document.getElementById("formScore").reset();
   $("#hintTxtDisplay,#showHintBtn").hide(1000);
 }
 
@@ -93,10 +103,10 @@ function uncheck() {
 
   <div class="radio">
     <p><b>Q4</b> Cirumference of circle is given by </p>
-    <label><input name="circum" value="1" type="radio" >pi*r*r</label>
-    <label><input name="circum" value="2" type="radio" >2*pi*r</label>
-    <label><input name="circum" value="3" type="radio" >2*pi</label>
-    <label><input name="circum" value="4" type="radio" >pi*r</label>
+    <label><input name="circum" value="1" type="radio" >\(\pi r^2 \)</label>
+    <label><input name="circum" value="2" type="radio" >\(2 \pi r \)</label>
+    <label><input name="circum" value="3" type="radio" >\(2 \pi \)</label>
+    <label><input name="circum" value="4" type="radio" >\(\pi r \)</label>
   </div>
 
   <div class="radio">
@@ -111,6 +121,15 @@ function uncheck() {
   <p><input value="Submit" type="submit" class="btn btn-success" id="submitBtn"></p>
 </form>
 
+<!--  This can be used to display SCORE-->
+<div id="scoreTxtDisplay">
+<form role="form" id="formScore" style="width: 250px">
+  <div class="form-group">
+    <label for="score">Score</label>
+    <textarea class="form-control" rows="1" id="score"></textarea>
+  </div>
+</form>
+</div>
 
 <!-- score area - initially hidden -->
 <!-- <div class="form-group" id="scoreDiv" style="display: none">
@@ -131,7 +150,7 @@ function uncheck() {
 <form role="form">
   <div class="form-group">
     <label for="comment">Click the button for hide/show</label>
-    <textarea class="form-control" rows="5" id="comment"></textarea>
+    <textarea class="form-control" rows="6" id="comment"></textarea>
   </div>
 </form>
 </div>
