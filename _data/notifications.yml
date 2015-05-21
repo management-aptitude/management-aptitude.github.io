@@ -2,12 +2,12 @@
 
 # notifications
 notify:
-  - date: 19/05/2015
-    description: A small description here
-    url: http://qualitative.in
+  - date: 25/05/2015
+    description: BSNl - 200 management trainee
+    url: http://www.externalexam.bsnl.co.in/
   - date: 18/05/2015
-    description: Another small description here
-    url: http://qualitative.in
+    description: Bharat Electronics Ltd - 394 graduate engineers
+    url: http://www.bel-india.com/?q=recruitment
   - date: 17/05/2015
     description: Yet another another small description here
     url: http://qualitative.in
