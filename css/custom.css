@@ -131,7 +131,7 @@ h1.brand-heading{
   height: 425px;
 }
 /* comment area inside carousel */
-#carousel_cmnt {
+.carousel_cmnt {
   font-family: 'Dancing Script', cursive;
   font-size: 20px;
 }

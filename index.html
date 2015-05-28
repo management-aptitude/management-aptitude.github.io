@@ -13,7 +13,7 @@ data-pause="hover" data-wrap="true">
           <div class="carousel-caption">
           <h1>{{ i.heading }}</h1>
           <!-- <p>"\({{ i.cmnt }}\)"</p> -->
-          <p><span id="carousel_cmnt">"{{ i.cmnt }}"</span> - {{ i.cmnt_person }}</p>
+          <p><span class="carousel_cmnt">"{{ i.cmnt }}"</span> - {{ i.cmnt_person }}</p>
           <p><a class="btn btn-primary btn-sm" href="{{ i.post_url | prepend:site.url }}" role="button">Read More</a></p>
           <form class="navbar-form">
             <input type="text" class="form-control" placeholder="Search...">
