@@ -2,18 +2,15 @@
 
 # notifications
 notify:
+  - date: 28/05/2015
+    description: FCI - Management trainee
+    url: http://www.fcijobsportal.com/Pages/Home.aspx
   - date: 25/05/2015
     description: BSNl - 200 management trainee
     url: http://www.externalexam.bsnl.co.in/
+  - date: 23/05/2015
+    description: UPSC - Civil Services Examination 2015
+    url: http://www.upsc.gov.in/
   - date: 18/05/2015
     description: Bharat Electronics Ltd - 394 graduate engineers
     url: http://www.bel-india.com/?q=recruitment
-  - date: 17/05/2015
-    description: Yet another another small description here
-    url: http://qualitative.in
-  - date: 16/05/2015
-    description: Reapting small description here
-    url: http://qualitative.in
-  - date: 15/05/2015
-    description: Same description here
-    url: http://qualitative.in
