@@ -3,6 +3,7 @@ layout: tabs
 ---
 
 <div class="container">
+  <h2>Notifications</h2>
 <!--  <div class="well"> -->
     {% for i in site.data.notifications.notify limit:3 %}
       <ul class="list-group customUl">

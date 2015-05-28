@@ -12,7 +12,8 @@ data-pause="hover" data-wrap="true">
         <div class="container">
           <div class="carousel-caption">
           <h1>{{ i.heading }}</h1>
-          <p>{{ i.cmnt }}</p>
+          <!-- <p>"\({{ i.cmnt }}\)"</p> -->
+          <p><span id="carousel_cmnt">"{{ i.cmnt }}"</span> - {{ i.cmnt_person }}</p>
           <p><a class="btn btn-primary btn-sm" href="{{ i.post_url | prepend:site.url }}" role="button">Read More</a></p>
           <form class="navbar-form">
             <input type="text" class="form-control" placeholder="Search...">
@@ -30,7 +31,8 @@ data-pause="hover" data-wrap="true">
 
   <section id="about">
     <h2>About</h2>
-    <p class="text-justify">{{ site.data.custom.about }}</p>
+    {% include about.html %}
+    <!-- <p class="text-justify">{{ site.data.custom.about }}</p> -->
   </section>
 
   <!-- Dashboard -->
@@ -59,7 +61,6 @@ data-pause="hover" data-wrap="true">
 
   <!-- notification section -->
   <section id="notifications">
-    <h2>Notifications</h2>
     {% for post in site.posts %}
       {% if post.title == 'Notifications' %}
         {{ post.excerpt }}

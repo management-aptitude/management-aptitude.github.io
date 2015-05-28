@@ -8,9 +8,8 @@ description: "Qualitative.In - collection of quality competitive materials"
 
 keywords: "management,aptitude,trainee,reasoning,arithmetic,mathematics,exams,current,affairs,moke,test,notifications"
 
-url: "http://qualitative.in/"
-#url: "http://0.0.0.0:4000/"
-
+url: "http://qualitative.in"
+#url: "http://0.0.0.0:4000"
 
 gems:
   - jekyll-sitemap

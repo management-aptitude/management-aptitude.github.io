@@ -15,22 +15,22 @@
         </li>
         <li><a href="{{ site.url }}">Home</a></li>
         <li class="active">
-          <a class="page-scroll" href="">About</a>
+          <a class="page-scroll" href="{{ "/about.html" | prepend:site.url }}">About</a>
           </li>
           <!-- <li><a class="page-scroll" href="#notifications">Notifications</a></li> -->
         <li>
-          <a href="mailto:{{ site.data.custom.email }}">Contact</a>
+          <a href="{{ "/contact.html" | prepend:site.url }}">Contact</a>
           </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Archive <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dashboard<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="{{ site.data.custom.carousel[0].post_url | prepend:site.url }}">Management</a></li>
+            <li><a href="{{ site.data.custom.carousel[1].post_url | prepend:site.url }}">Reasoning</a></li>
+            <li><a href="{{ site.data.custom.carousel[2].post_url | prepend:site.url }}">Arithmetic</a></li>
+            <li><a href="{{ site.data.custom.carousel[3].post_url | prepend:site.url }}">Current Affairs</a></li>
             <li class="divider"></li>
-            <li class="dropdown-header">Nav header</li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
+            <li class="dropdown-header">Tests</li>
+            <li><a href="{{ "/2015/05/11/moke.html" | prepend:site.url }}">Moke</a></li>
           </ul>
         </li>
       </ul>

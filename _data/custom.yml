@@ -14,38 +14,43 @@ social:
   - title: google-plus
     url: https://plus.google.com/
 
-#
 about: "Etiam vulputate fringilla varius. Fusce vehicula in erat sed vestibulum.
-Donec venenatis, orci vitae suscipit molestie, ipsum libero aliquet elit, sed
-elementum dolor tellus quis risus. Suspendisse convallis ullamcorper efficitur.
+Donec venenatis, orci vitae suscipit molestie, ipsum libero aliquet elit,
+sed elementum dolor tellus quis risus. Suspendisse convallis ullamcorper efficitur.
+
 Etiam vulputate fringilla varius. Fusce vehicula in erat sed vestibulum.
 Donec venenatis, orci vitae suscipit molestie, ipsum libero aliquet elit, sed
-elementum dolor tellus quis risus. Suspendisse convallis ullamcorper efficitur."
+elementum dolor tellus quis risus. Suspendisse convallis ullamcorper Suspendisse."
 
-#
+
+
 # carousel
 carousel:
   - heading: Management
     img_url: media/images/mangmnt_carousel.png
-    cmnt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae magna. Fusce ut est gravida augue malesuada vestibulum in in eros.
+    cmnt: People may hear your words, but they feel your attitude.
+    cmnt_person: John C. Maxwell
     post_url: /2015/05/14/management.html
     slide_num: first-slide
     active:
   - heading: Reasoning
     img_url: media/images/reasng_carousel.png
-    cmnt: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+    cmnt: The important  thing is not to stop questioning. Curiosity has its own reason for existing.
+    cmnt_person: Albert Einstein
     post_url: /2015/05/14/reasoning.html
     slide_num: second-slide
     active: active
   - heading: Arithmetic
     img_url: media/images/arthmtc_carousel.png
-    cmnt: Justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+    cmnt: Nobody challenges me. I challenge myself.
+    cmnt_person: Shakuntala Devi
     post_url: /2015/05/14/arithmetic.html
     slide_num: third-slide
     active:
   - heading: Current Affairs
     img_url: media/images/currentaffairs_carousel.png
-    cmnt: Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+    cmnt: If you don’t know history, you don’t know anything.
+    cmnt_person: Edward Johnston
     post_url: /2015/05/17/currentaffairs.html
     slide_num: forth-slide
-    active: 
+    active:
