@@ -14,13 +14,10 @@ social:
   - title: google-plus
     url: https://plus.google.com/
 
-about: "Etiam vulputate fringilla varius. Fusce vehicula in erat sed vestibulum.
-Donec venenatis, orci vitae suscipit molestie, ipsum libero aliquet elit,
-sed elementum dolor tellus quis risus. Suspendisse convallis ullamcorper efficitur.
-
-Etiam vulputate fringilla varius. Fusce vehicula in erat sed vestibulum.
-Donec venenatis, orci vitae suscipit molestie, ipsum libero aliquet elit, sed
-elementum dolor tellus quis risus. Suspendisse convallis ullamcorper Suspendisse."
+about: "We faced same troubles like all other people appearing for competitive exams. Mock tests that are paid, 
+articles at various places and often quite sketchy. So we thought why not have info at one place and have tests 
+at the same place. Helps save a lot of time. Thats resulted in this site and we wish to have a positive impact 
+with this among the student community. We hope we can achieve this in the long run."
 
 
 
@@ -54,3 +51,12 @@ carousel:
     post_url: /2015/05/17/currentaffairs.html
     slide_num: forth-slide
     active:
+
+# Contributors list
+contributors:
+  - name: Sreejith SS
+    area: Content
+  - name: Varun Bhuvanendran
+    area: Design, Content
+  - name: Sandeep Pillai
+    area: Content

@@ -31,8 +31,9 @@ data-pause="hover" data-wrap="true">
 
   <section id="about">
     <h2>About</h2>
-    {% include about.html %}
-    <!-- <p class="text-justify">{{ site.data.custom.about }}</p> -->
+    <!-- <p class="text-justify">{% include about.html %}</p> -->
+    <p class="text-justify">{{ site.data.custom.about }}
+    <a class="btn btn-info btn-sm" href="{{ "/about/" | prepend:site.url }}">Read More</a></p> 
   </section>
 
   <!-- Dashboard -->
