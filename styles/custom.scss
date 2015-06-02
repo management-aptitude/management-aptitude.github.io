@@ -1,9 +1,22 @@
-body {
+---
+---
 
+@import "bootstrap-scss/bootstrap";
+
+body {
+	width: 100%;
+    height: 100%;
 }
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
 p {
-font-family: 'Droid Sans', sans-serif;
+	font-family: 'Droid Sans', sans-serif;
 }
+
 h1,
 h2,
 h3,
@@ -20,6 +33,7 @@ h6 {
 h1.brand-heading{
   font-weight: 3000;
 }
+
 .navbar-static-top {
   margin-bottom: 19px;
 }
@@ -83,7 +97,7 @@ h1.brand-heading{
 }
 
 .navbar-custom .nav li.active a:hover {
-  color: rgba(51,122,122);
+  color: rgba(51,122,122,.3);
 }
 
 @media(min-width:768px) {
