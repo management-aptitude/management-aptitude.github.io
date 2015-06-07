@@ -23,32 +23,25 @@ with this among the student community. We hope we can achieve this in the long r
 
 # carousel
 carousel:
-  - heading: Management
+  - heading: Management Aptitude
     img_url: media/images/mangmnt_carousel.png
     cmnt: People may hear your words, but they feel your attitude.
     cmnt_person: John C. Maxwell
-    post_url: /2015/05/14/management.html
+    post_url: /2015/05/14/management-aptitude.html
     slide_num: first-slide
     active:
-  - heading: Reasoning
-    img_url: media/images/reasng_carousel.png
+  - heading: Cognitive Ability  
+    img_url: media/images/cognitiveability_carousel.png
     cmnt: The important  thing is not to stop questioning. Curiosity has its own reason for existing.
     cmnt_person: Albert Einstein
-    post_url: /2015/05/14/reasoning.html
+    post_url: /2015/05/14/cognitive-ability.html
     slide_num: second-slide
     active: active
-  - heading: Arithmetic
-    img_url: media/images/arthmtc_carousel.png
-    cmnt: Nobody challenges me. I challenge myself.
-    cmnt_person: Shakuntala Devi
-    post_url: /2015/05/14/arithmetic.html
-    slide_num: third-slide
-    active:
   - heading: Current Affairs
     img_url: media/images/currentaffairs_carousel.png
     cmnt: If you don’t know history, you don’t know anything.
     cmnt_person: Edward Johnston
-    post_url: /2015/05/17/currentaffairs.html
+    post_url: /2015/05/17/current-affairs.html
     slide_num: forth-slide
     active:
 

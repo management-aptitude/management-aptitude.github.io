@@ -29,7 +29,7 @@ layout: default
       <tr>
           <td>{{ i.name }}</td>
           <td>{{ i.area }}</td>
-          <td>{{ i.link }}</td>
+          <td><a href="mailto:{{ i.link }}">{{ i.link }}</a></td>
       </tr>
       {% endfor %}
     </tbody>
