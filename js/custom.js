@@ -5,10 +5,10 @@
       //$(div_id).show(1000);
     //});
     if (false == $(div_id).is(':visible')) {
-        $(div_id).show(1000);
+        $(div_id).show(500);
     }
     else {
-        $(div_id).hide(1000);
+        $(div_id).hide(500);
     }
   });
 }
