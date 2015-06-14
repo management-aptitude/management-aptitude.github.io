@@ -178,3 +178,15 @@ accountingPart2:
     active:
   - url: /media/tab_slides/management_slides/accounting_management_slides/part_2/accounting_management_slide_part2_26.png
     active:
+
+syllogismPart1:
+  - url: /media/tab_slides/management_slides/syllogism_cognitive_slides/syllogism_cognitive_part1_1.png
+    active: active
+  - url: /media/tab_slides/management_slides/syllogism_cognitive_slides/syllogism_cognitive_part1_2.png
+    active:
+  - url: /media/tab_slides/management_slides/syllogism_cognitive_slides/syllogism_cognitive_part1_3.png
+    active:
+  - url: /media/tab_slides/management_slides/syllogism_cognitive_slides/syllogism_cognitive_part1_4.png
+    active:
+  - url: /media/tab_slides/management_slides/syllogism_cognitive_slides/syllogism_cognitive_part1_5.png
+    active:

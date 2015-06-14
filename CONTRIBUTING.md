@@ -14,6 +14,7 @@ layout: default
 	</p>
   </section>
 
+  <div class="container">
   <section>
     <h4>Contributors</h4>
   <table class="table table-hover">
@@ -21,7 +22,7 @@ layout: default
       <tr>
         <th>Name</th>
         <th>Area</th>
-        <th>Contact</th>
+        <!-- <th>Contact</th> -->
       </tr>
     </thead>
     <tbody>
@@ -29,11 +30,11 @@ layout: default
       <tr>
           <td>{{ i.name }}</td>
           <td>{{ i.area }}</td>
-          <td><a href="mailto:{{ i.link }}">{{ i.link }}</a></td>
+          <!-- <td><a href="mailto:{{ i.link }}">{{ i.link }}</a></td> -->
       </tr>
       {% endfor %}
     </tbody>
   </table>
   </section>
-	
+	</div>
 </div>
