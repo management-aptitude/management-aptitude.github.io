@@ -197,3 +197,11 @@ ul.customUl {
 #showHintBtn.btn-warning , #resetBtn.btn-danger , #submitBtn.btn-success{
   width: 80px;
 }
+
+/* iframe */
+@media(min-width:767px) {
+  iframe {
+    width: 595px;
+    height: 485px;
+  }
+}
