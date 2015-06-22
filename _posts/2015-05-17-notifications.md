@@ -1,5 +1,6 @@
 ---
 layout: tabs
+permalink: /notifications.html
 ---
 
 <div class="container">

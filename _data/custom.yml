@@ -28,6 +28,7 @@ carousel:
     cmnt: People may hear your words, but they feel your attitude.
     cmnt_person: John C. Maxwell
     post_url: /2015/05/14/management-aptitude.html
+    permalink: /management-aptitude.html
     slide_num: first-slide
     active:
   - heading: Cognitive Ability  
@@ -35,6 +36,7 @@ carousel:
     cmnt: The important  thing is not to stop questioning. Curiosity has its own reason for existing.
     cmnt_person: Albert Einstein
     post_url: /2015/05/14/cognitive-ability.html
+    permalink: /cognitive-ability.html
     slide_num: second-slide
     active: active
   - heading: Current Affairs
@@ -42,6 +44,7 @@ carousel:
     cmnt: If you don’t know history, you don’t know anything.
     cmnt_person: Edward Johnston
     post_url: /2015/05/17/current-affairs.html
+    permalink: /current-affairs.html
     slide_num: forth-slide
     active:
 

@@ -15,18 +15,18 @@
         </li>
         <li><a href="{{ site.url }}"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
         <li class="active">
-          <a class="page-scroll" href="{{ "/about/" | prepend:site.url }}"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About</a>
+          <a class="page-scroll" href="{{ "/about.html" | prepend:site.url }}"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About</a>
           </li>
           <!-- <li><a class="page-scroll" href="#notifications">Notifications</a></li> -->
         <li>
-          <a href="{{ "/contact/" | prepend:site.url }}"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a>
+          <a href="{{ "/contact.html" | prepend:site.url }}"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a>
           </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Dashboard<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="{{ site.data.custom.carousel[0].post_url | prepend:site.url }}">Management Aptitude</a></li>
-            <li><a href="{{ site.data.custom.carousel[1].post_url | prepend:site.url }}">Cognitive Ability</a></li>
-            <li><a href="{{ site.data.custom.carousel[2].post_url | prepend:site.url }}">Current Affairs</a></li>
+            <li><a href="{{ site.data.custom.carousel[0].permalink | prepend:site.url }}">Management Aptitude</a></li>
+            <li><a href="{{ site.data.custom.carousel[1].permalink | prepend:site.url }}">Cognitive Ability</a></li>
+            <li><a href="{{ site.data.custom.carousel[2].permalink | prepend:site.url }}">Current Affairs</a></li>
             <!-- <li><a href="{{ site.data.custom.carousel[3].post_url | prepend:site.url }}">Arithmetic</a></li> -->
             <li class="divider"></li>
             <li class="dropdown-header">Tests</li>

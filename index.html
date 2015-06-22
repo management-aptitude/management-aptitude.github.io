@@ -8,7 +8,7 @@ data-pause="hover" data-wrap="true">
   <div class="carousel-inner" role="listbox">
     {% for i in site.data.custom.carousel %}
       <div class="item {{ i.active }}">
-        <img class="{{ i.slide_num }}" src="{{ i.img_url }}" alt="First slide">
+        <img class="{{ i.slide_num }}" src="{{ i.img_url }}" alt=" ">
         <div class="container">
           <div class="carousel-caption">
           <h1>{{ i.heading }}</h1>
@@ -46,7 +46,7 @@ data-pause="hover" data-wrap="true">
     {% for post in site.posts offset:1  %}
     <div class="col-xs-6 col-sm-3 placeholder">
       <a href="{{ post.url | prepend:site.url }}">
-        <img src="{{ words[count] }}" class="img-responsive" alt="{{ words[count] }}">
+        <img src="{{ words[count] }}" class="img-responsive" alt=" ">
         {% assign count = count | plus:1 %}
       </a>
       <h4>{{ post.title }}</h4>
