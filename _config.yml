@@ -13,3 +13,6 @@ url: "http://qualitative.in"
 
 gems:
   - jekyll-sitemap
+
+#paginate: 2
+#paginate_path: ""

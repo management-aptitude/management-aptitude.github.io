@@ -15,9 +15,9 @@ data-pause="hover" data-wrap="true">
           <!-- <p>"\({{ i.cmnt }}\)"</p> -->
           <p><span class="carousel_cmnt">"{{ i.cmnt }}"</span> - {{ i.cmnt_person }}</p>
           <p><a class="btn btn-primary btn-sm" href="{{ i.post_url | prepend:site.url }}" role="button">Read More</a></p>
-          <form class="navbar-form">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
+          <!-- <form class="navbar-form search">
+            <input type="text" class="form-control search-box" id="search" placeholder="Search...">
+          </form> -->
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@ data-pause="hover" data-wrap="true">
     <h2>About</h2>
     <!-- <p class="text-justify">{% include about.html %}</p> -->
     <p class="text-justify">{{ site.data.custom.about }}
-    <a class="btn btn-info btn-sm" href="{{ "/about/" | prepend:site.url }}">Read More</a></p> 
+    <a class="btn btn-info btn-sm" href="{{ "/about.html" | prepend:site.url }}">Read More</a></p> 
   </section>
 
   <!-- Dashboard -->
